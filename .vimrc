@@ -167,6 +167,18 @@
         set number
         "set relativenumber
 
+        function! NumberToggle()
+            if &relativenumber == 1
+                set number
+                set relativenumber!
+            else
+                set number!
+                set relativenumber
+            endif
+        endfunc
+        nnoremap <leader>m :call NumberToggle()<CR>
+        "nnoremap <C-l> :call NumberToggle()<cr>
+
         " Give context to where the cursor is positioned in a file
         set scrolloff=14
 
@@ -182,7 +194,7 @@
         set nowritebackup
 
         " Enable spell checking
-        set spell
+        "set spell
 
         " Auto Complete Menu
         set completeopt=longest,menu
