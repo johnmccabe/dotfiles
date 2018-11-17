@@ -53,6 +53,7 @@ tap "garethr/kubeval"
 brew "kubeval"
 tap "johanhaleby/kubetail"
 brew "kubetail"
+brew "kafkacat"
 
 cask "font-fira-code"
 cask "virtualbox"
