@@ -49,6 +49,10 @@ brew "maven"
 brew "lolcat"
 brew "nvm"
 
+# Ruby
+brew "rbenv"
+brew "ruby-build"
+
 tap "wagoodman/dive"
 brew "dive"
 tap "knqyf263/pet"
